@@ -2,6 +2,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.carousel-text {
+    padding: 10px;
+    background-color: rgba(198, 156, 109, 0.7);
+    color: #492626;
+}
+.carousel img {
+    min-width: 1200px;
+}
+
 #quote1 {
     background-color: #E0E0E0;
     text-align: right;
