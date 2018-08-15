@@ -2,6 +2,31 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+#header {
+    /* margin-top: 3.5rem; */
+    height: 800px;
+    background-image: url(../img/carousel/IMG_1479.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+
+    color: white;
+}
+
+.header__div {
+    background-color: rgba(198, 156, 109, 0.7);
+    border: 1px;
+    border-color: rgba(198, 156, 109, 0.7);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.header__div_text {
+    margin-top: 20px;
+}
+
 .carousel-text {
     padding: 10px;
     background-color: rgba(198, 156, 109, 0.7);
