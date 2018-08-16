@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v1
+# v2
 
 CACHE:
 index.html
@@ -8,8 +8,8 @@ favicon-32.png
 css/bootstrap.min.css
 css/main.css
 
-img/about-280.png
-img/about-400.png
+img/about/about-280.png
+img/about/about-400.png
 img/catalog/ph-0001.jpg
 img/catalog/ph-0002.jpg
 img/catalog/ph-0003.jpg
