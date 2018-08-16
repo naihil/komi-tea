@@ -60,6 +60,23 @@ body {
     padding: 2px 5px 2px 5px;
 }
 
+.catalog-link {
+    background-color: transparent;
+    border: 2px solid #492626;
+    border-radius: 5px;
+    color: #492626;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.catalog-link:active,
+.catalog-link:hover,
+.catalog-link:link,
+.catalog-link:visited {
+    color: #492626;
+    text-decoration: none;
+}
+
 /* О нас */
 #about {
     background-color: #C69C6D;
