@@ -4,7 +4,7 @@ body {
 
 /* Шапка */
 #header {
-    background-image: url(../img/carousel/IMG_1519.jpg);
+    background-image: url(../img/header.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     height: 800px;
@@ -69,7 +69,7 @@ body {
 }
 
 .about-photo {
-    background-image: url(../img/about-280.png);
+    background-image: url(../img/about/about-280.png);
     border-radius: 5px;
     height: 280px;
     width: 280px;
@@ -145,7 +145,7 @@ body {
 
 @media (min-width: 576px) {
     .about-photo {
-        background-image: url(../img/about-400.png);
+        background-image: url(../img/about/about-400.png);
         border-radius: 5px;
         height: 400px;
         width: 400px;
