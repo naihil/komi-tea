@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /img/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /js/
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yandex
+Allow: /img/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /js/
+Host: https://komi-tea.ru
