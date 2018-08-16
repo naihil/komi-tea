@@ -1,8 +1,7 @@
 CACHE MANIFEST
-# v2
+# v3
 
 CACHE:
-index.html
 favicon-32.png
 
 css/bootstrap.min.css
@@ -24,3 +23,6 @@ img/marker.png
 
 js/bootstrap.bundle.min.js
 js/jquery-3.3.1.slim.min.js
+
+NETWORK:
+index.html
