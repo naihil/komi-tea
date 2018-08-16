@@ -2,11 +2,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Шапка */
 #header {
-    background-image: url(../img/carousel/IMG_1479.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url(../img/carousel/IMG_1519.jpg);
     background-position: center top;
+    background-repeat: no-repeat;
     height: 800px;
 }
 
@@ -17,105 +17,40 @@ body {
 }
 
 .header__div {
-    color: white;
     background-color: rgba(198, 156, 109, 0.7);
     border: 1px;
     border-color: rgba(198, 156, 109, 0.7);
     border-radius: 5px;
-    /* padding: 25px 5px 20px 5px; */
+    color: white;
     text-align: center;
-    /* font-size: 1.5rem; */
 }
 
-/* .header__div_text {
-    margin-top: 20px;
-} */
-
-.carousel-text {
-    padding: 10px;
-    background-color: rgba(198, 156, 109, 0.7);
-    color: #492626;
-}
-.carousel img {
-    min-width: 1200px;
-}
-
-#quote1 {
+/* Цитата */
+#quote {
     background-color: #E0E0E0;
-    text-align: right;
     color: #492626;
     font-style: italic;
+    padding: 10px 0;
+    text-align: right;
 }
 
+#quote p {
+    margin: 0;
+}
+
+/* Каталог */
 #catalog {
-    color: #492626;
     background-color: white;
-}
-
-#about {
-    background-color: #C69C6D;
-    text-align: justify;
     color: #492626;
+    padding: 10px 0;
 }
 
-#reviews {
-    color: #C69C6D;
-    background-color: #492626;
+#catalog p {
+    margin: 0;
 }
 
-#where {
-    color: #492626;
-    background-color: #ffffff;
-}
-
-.where_row {
-    margin: 10px 0;
-}
-
-.where_item {
-    margin-left: 10px;
-}
-
-.margin-left-item {
-    margin-left: 10px;
-}
-
-.padding-vert-item {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.review-date {
-    color: #939393;
-}
-
-.bp_author {
-    font-weight: 700;
-    /*color: #42648b;*/
-}
-
-#footer {
-    width: auto;
-    height: 400px;
-    background-image: url("../img/footer.jpg");
-}
-
-.footer-div {
-    padding: 20px 100px 20px 100px;
-    background-color: #F98F0B;
-    font-weight: bold;
-}
-
-.footer-text {
-    margin-right: 10px;
-    font-size: 1.2rem;
-    color: #492626;
-}
-
-.footer-phone {
-    margin-left: 10px;
-    color: white;
-    font-size: 2.4rem;
+.catalog-item {
+    padding: 10px 10px;
 }
 
 .card-body {
@@ -123,4 +58,107 @@ body {
     background-color: #492626;
     margin: 0;
     padding: 2px 5px 2px 5px;
+}
+
+/* О нас */
+#about {
+    background-color: #C69C6D;
+    color: #492626;
+    padding: 10px 0;
+    text-align: justify;
+}
+
+.about-photo {
+    background-image: url(../img/about-280.png);
+    border-radius: 5px;
+    height: 280px;
+    width: 280px;
+}
+
+/* Отзывы */
+#review {
+    background-color: #492626;
+    color: #C69C6D;
+    padding: 10px 0;
+}
+
+#review p {
+    font-style: italic;
+    margin: 0;
+}
+
+.review-item {
+    padding: 10px 10px;
+}
+
+.review-author {
+    font-weight: 700;
+    padding-right: 5px;
+}
+
+.review-date {
+    color: #939393;
+}
+
+/* Где приобрести */
+#where {
+    background-color: white;
+    color: #492626;
+    padding: 10px 0;
+}
+
+.where-item {
+    padding: 10px 10px;
+}
+
+.where-text {
+    padding-left: 5px;
+}
+
+/* Подвал */
+#footer {
+    background-image: url(../img/footer.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.footer-div {
+    background-color: #F98F0B;
+    border: 1px;
+    border-color: #F98F0B;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.footer-text {
+    color: #492626;
+    margin: 0;
+}
+
+.footer-phone {
+    color: white;
+    font-size: 2rem;
+}
+
+@media (min-width: 576px) {
+    .about-photo {
+        background-image: url(../img/about-400.png);
+        border-radius: 5px;
+        height: 400px;
+        width: 400px;
+    }
+    
+}
+
+@media (min-width: 1201px) {
+    #header {
+        background-size: cover;
+    }
+
+    #footer {
+        background-size: cover;
+    }
 }
