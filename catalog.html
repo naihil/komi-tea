@@ -28,7 +28,14 @@
         <div class="col-12 catalog-item">
             <div class="mx-auto">
                 <p class="catalog-item-text">{title}</p>
-                <img class="catalog-item-thumbnale img-thumbnail" src="{img_thumb}" width="200" height="200" alt="{title}">
+                <div class="row">
+                    <div class="col-12 col-lg-2">
+                        <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="{img_thumb}" width="200" height="200" alt="{title}">
+                    </div>
+                    <div class="col-12 col-lg-10">
+                        {description}
+                    </div>
+                </div>
             </div>
         </div>
     </template>

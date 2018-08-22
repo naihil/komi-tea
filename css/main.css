@@ -167,6 +167,10 @@ body {
     font-size: 2rem;
 }
 
+#catalog-row p::first-letter {
+    margin-left: 5px;
+}
+
 @media (min-width: 576px) {
     .about-photo {
         background-image: url(../img/about/about-400.png);
