@@ -167,8 +167,17 @@ body {
     font-size: 2rem;
 }
 
-#catalog-row p::first-letter {
-    margin-left: 5px;
+/*#catalog-row p::first-letter {*/
+    /*margin-left: 5px;*/
+/*}*/
+
+#catalog-row .catalog-text-bold {
+    font-weight: bold;
+}
+
+#catalog-row .catalog-text-contra {
+    margin-top: 15px;
+    font-size: 0.8rem;
 }
 
 @media (min-width: 576px) {
