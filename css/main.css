@@ -171,11 +171,20 @@ body {
     /*margin-left: 5px;*/
 /*}*/
 
-#catalog-row .catalog-text-bold {
+#catalogIvanTea,
+#catalogBathings,
+#catalogFitness,
+#catalogHoney {
+    padding: 10px 0;
+}
+
+#catalogIvanTea-row .catalog-text-bold,
+#catalogBathings-row .catalog-text-bold {
     font-weight: bold;
 }
 
-#catalog-row .catalog-text-contra {
+#catalogIvanTea-row .catalog-text-contra,
+#catalogBathings-row .catalog-text-contra {
     margin-top: 15px;
     font-size: 0.8rem;
 }

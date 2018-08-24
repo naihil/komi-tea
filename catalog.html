@@ -16,6 +16,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -30,7 +31,9 @@
                 <p class="catalog-item-text">{title}</p>
                 <div class="row">
                     <div class="col-12 col-lg-2">
-                        <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="{img_thumb}" width="200" height="200" alt="{title}">
+                        <a href="{img}" data-toggle="lightbox" data-footer="{title}">
+                            <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="{img_thumb}" width="200" height="200" alt="{title}">
+                        </a>
                     </div>
                     <div class="col-12 col-lg-10">
                         {description}
@@ -41,29 +44,109 @@
         </div>
     </template>
 
-    <section id="catalog">
-        <h1>Каталог</h1>
-        <div class="container">
-            <div id="catalog-row" class="row">
-                <!-- <div class="col-12">
-                    <div class="mx-auto">
-                        <p>Иван-чай с малиной</p>
-                        <div class="row">
-
-                        </div>
-                        <img class="img-thumbnail" src="img/catalog/ph-0001-small.jpg" width="200" height="200" alt="Иван-чай с малиной">
+    <section id="header">
+        <div class="container w-100 h-100">
+            <div class="row h-100">
+                <div class="col col-md-8 mx-auto d-flex align-items-center">
+                    <div class="header__div mx-auto">
+                        <img class="d-block mx-auto" src="img/logo-260.png" alt="Ыбский чай" width="260" height="142">
+                        <h1>Каталог</h1>
                     </div>
-                </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogIvanTea">
+        <div class="container">
+            <h2>ИВАН-ЧАЙ</h2>
+            <div id="catalogIvanTea-row" class="row">
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogBathings">
+        <div class="container">
+            <h2>ЧАЙНЫЕ КУПАЖИ</h2>
+            <div id="catalogBathings-row" class="row">
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogFitness">
+        <div class="container">
+            <h2>ФИТНЕС-ЛИНЕЙКА</h2>
+            <div id="catalogBathings-row" class="row justify-content-center">
+                <div class="col-12">
+                    <p><span class='catalog-text-bold'>Фитнес-чаи</span> от «Ыбского чая», разработанные вместе с диетологом Оксаной Кистановой, лучшие ингредиенты, волшебный эффект, которыми остались довольны многие. На данный момент чаи: очищающий и от отёков, который не даёт застаиваться жидкости в тканях.</p>
+                </div>
+                <div class="col-12 col-lg-2 catalog-item">
+                    <a href="img/catalog/cat-fitness-01.jpg" data-toggle="lightbox" data-footer="Очищающий">
+                        <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-fitness-01-small.jpg" width="200" height="200" alt="Очищающий">
+                    </a>
+                </div>
+                <div class="col-12 col-lg-2 catalog-item">
+                    <a href="img/catalog/cat-fitness-02.jpg" data-toggle="lightbox" data-footer="Лимфодренажный">
+                        <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-fitness-02-small.jpg" width="200" height="200" alt="Лимфодренажный">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="catalogHoney">
+        <div class="container">
+            <h2>ПРОДУКТЫ ПЧЕЛОВОДСТВА</h2>
+            <div class="row">
+                <div class="col-12">
+                    <p>Кроме дружбы с лесным жителями, «Ыбский чай» дружит с пчелами. У нас есть небольшая пасека – армия верных, трудолюбивых пчёлок, которым не под силу в северных условиях запастись витаминами на каждого жителя. 
+                    В итоге наш медовый ассортимент активно пополняется южным, уже в течение 20 лет с одной и той же пасеки небольшой деревни Отары, разделяющей Кировскую и Марийскую области, где живёт часть нас, часть широкой души «Ыбского чая». 
+                    С тех пор считается, что у нас 2 пасеки, северная и южная. Все продукты пчеловодства имеют ветеринарные свидетельства, множество положительных отзывов и давно Вами проверены. 
+                    Ассортимент: мёд цветочный, крем-мёд цветочный, мёд цветочный с прополисом, мёд цветочный с пергой, мёд в сотах, забрус или сотовые запечатки, прополис, перга, прополисные холстики.</p>
+                </div>
+                <div class="col-12">
+                    <a href="img/catalog/cat-honey-01.png" data-toggle="lightbox" data-footer="Мёд">
+                        <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-honey-01-small.png" width="200" height="200" alt="Мёд">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>ПРОПОЛИС – пчелиный клей со сложным химическим составом, который вырабатывают пчелы в целях дезинфекции улья. Он состоит из различных смол, масел, спиртов, белков, а также воска, цветочной пыльцы, витаминов, сахара и других ингредиентов.</p>
+                    <p>Назначение прополиса – уничтожать возбудителей инфекционных заболеваний и разрушать токсины. Прополис подавляет активность и убивает бактерии и вирусы, замедляет рост некоторых из них, подавляет болезнетворные организмы. Кроме того, этот медопродукт обезвреживает яды, которые выделяют распадающиеся клетки, ускоряет процессы регенерации, заживления.</p>
+                    <p>Попадая в организм человека, прополис удаляет холестерин, чистит клеточные мембраны, нейтрализует патологические клетки, восстанавливает поражённые ткани.</p>
+                    <p>При этом не оказывает вредного воздействия на микрофлору кишечника и усиливает действие других лекарственных средств. Прополис имеет уникальное качество – даже после обработки высокими температурами не изменять своих свойств.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="js/app.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(fillCatalogItems());
+        $(document).ready(function () {
+            var wnd = $(window);
+            var hdr = $('#header');
+
+            if (wnd.height() < 800) {
+                hdr.height(wnd.height());
+            }
+
+            wnd.on('resize', function () {
+                hdr.height(wnd.height());
+            });
+
+            fillCatalogItems();
+        });
+
+        
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
     </script>
 </body>
 
