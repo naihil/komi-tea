@@ -25,25 +25,6 @@
     <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter50018893 = new Ya.Metrika2({ id:50018893, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/50018893" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
-    <template id="catalog-item-template">
-        <div class="col-12 catalog-item">
-            <div class="mx-auto">
-                <p class="catalog-item-text">{title}</p>
-                <div class="row">
-                    <div class="col-12 col-lg-2">
-                        <a href="{img}" data-toggle="lightbox" data-footer="{title}">
-                            <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="{img_thumb}" width="200" height="200" alt="{title}">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-10">
-                        {description}
-                        <p class="catalog-text-contra"><span class="catalog-text-bold">Противопоказания</span>: {contra}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </template>
-
     <section id="header">
         <div class="container w-100 h-100">
             <div class="row h-100">
@@ -57,19 +38,48 @@
         </div>
     </section>
 
+    <template id="tbodyTemplate">
+        <tr>
+            <td>
+                <a class="d-block" data-toggle="collapse" href="#{id}" role="button" aria-expanded="false" aria-controls="{id}">
+                    {title}
+                </a>
+                <div class="collapse" id="{id}">
+                    <div class="card card-body">
+                        <div class="row">
+                            <div class="col-12 col-lg-2">
+                                <a href="{img}" data-toggle="lightbox" class="d-block p-10px">
+                                    <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="{img_thumb}" alt="{title}">
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-10">
+                                {description}
+                                <p class="catalog-text-contra"><span class="f-bold">Противопоказания</span>: {contra}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </template>
+
     <section id="catalogIvanTea">
         <div class="container">
             <h2>ИВАН-ЧАЙ</h2>
-            <div id="catalogIvanTea-row" class="row">
-            </div>
+            <table class="table table-striped">
+                <tbody id="teaTable">
+                </tbody>
+            </table>
         </div>
     </section>
 
     <section id="catalogBathings">
         <div class="container">
             <h2>ЧАЙНЫЕ КУПАЖИ</h2>
-            <div id="catalogBathings-row" class="row">
-            </div>
+            <table class="table table-striped">
+                <tbody id="bathingsTable">
+                </tbody>
+            </table>
         </div>
     </section>
 
@@ -78,159 +88,169 @@
             <h2>ПРОДУКТЫ ПЧЕЛОВОДСТВА</h2>
             <div class="row">
                 <div class="col-12">
-                    <p>Кроме дружбы с лесным жителями, «Ыбский чай» дружит с пчелами. У нас есть небольшая пасека – армия верных, трудолюбивых пчёлок, которым не под силу в северных условиях запастись витаминами на каждого жителя. 
-                    В итоге наш медовый ассортимент активно пополняется южным, уже в течение 20 лет с одной и той же пасеки небольшой деревни Отары, разделяющей Кировскую и Марийскую области, где живёт часть нас, часть широкой души «Ыбского чая». 
-                    С тех пор считается, что у нас 2 пасеки, северная и южная. Все продукты пчеловодства имеют ветеринарные свидетельства, множество положительных отзывов и давно Вами проверены. 
+                    <p>Кроме дружбы с лесным жителями, «Ыбский чай» дружит с пчелами. У нас есть небольшая пасека – армия верных, трудолюбивых пчёлок, которым не под силу в северных условиях запастись витаминами на каждого жителя.
+                    В итоге наш медовый ассортимент активно пополняется южным, уже в течение 20 лет с одной и той же пасеки небольшой деревни Отары, разделяющей Кировскую и Марийскую области, где живёт часть нас, часть широкой души «Ыбского чая».
+                    С тех пор считается, что у нас 2 пасеки, северная и южная. Все продукты пчеловодства имеют ветеринарные свидетельства, множество положительных отзывов и давно Вами проверены.
                     Ассортимент: мёд цветочный, крем-мёд цветочный, мёд цветочный с прополисом, мёд цветочный с пергой, мёд в сотах, забрус или сотовые запечатки, прополис, перга, прополисные холстики.</p>
                 </div>
-                <div class="col-12">
-                    <a href="img/catalog/cat-honey-01.png" data-toggle="lightbox" data-footer="Мёд">
-                        <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-honey-01-small.png" width="200" height="200" alt="Мёд">
-                    </a>
-                </div>
             </div>
 
-            <div class="accordion" id="accordionHoney">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseHoney1" aria-expanded="true" aria-controls="collapseHoney1">
-                                Прополис
-                            </button>
-                        </h5>
-                    </div>
-                    <div class="collapse" id="collapseHoney1">
-                        <div class="card-body">
-                            <div class="row justify-content-center">
-                                <div class="col-12">
-                                    <p><span class='f-bold'>ПРОПОЛИС</span> – пчелиный клей со сложным химическим составом, который вырабатывают
-                                        пчелы в целях дезинфекции улья. Он состоит из различных смол, масел, спиртов, белков, а также
-                                        воска, цветочной пыльцы, витаминов, сахара и других ингредиентов.</p>
-                                    <p>Назначение прополиса – уничтожать возбудителей инфекционных заболеваний и разрушать токсины. Прополис
-                                        подавляет активность и убивает бактерии и вирусы, замедляет рост некоторых из них, подавляет
-                                        болезнетворные организмы. Кроме того, этот медопродукт обезвреживает яды, которые выделяют распадающиеся
-                                        клетки, ускоряет процессы регенерации, заживления.</p>
-                                    <p>Попадая в организм человека, прополис удаляет холестерин, чистит клеточные мембраны, нейтрализует
-                                        патологические клетки, восстанавливает поражённые ткани.</p>
-                                    <p>При этом не оказывает вредного воздействия на микрофлору кишечника и усиливает действие других
-                                        лекарственных средств. Прополис имеет уникальное качество – даже после обработки высокими температурами
-                                        не изменять своих свойств.</p>
-                                </div>
-                                <div class="col-12 col-lg-2 p-10px">
-                                    <a href="img/catalog/cat-honey-02.png" data-toggle="lightbox" data-footer="Прополис">
-                                        <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-honey-02-small.png" width="200" height="200"
-                                            alt="Прополис">
-                                    </a>
-                                </div>
-                                <div class="col-12 col-lg-2 p-10px">
-                                    <a href="img/catalog/cat-honey-03.png" data-toggle="lightbox" data-footer="Мёд с прополисом">
-                                        <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-honey-03-small.png" width="200" height="200"
-                                            alt="Мёд с прополисом">
-                                    </a>
+            <table class="table table-striped">
+                <tbody>
+                <tr>
+                    <td>
+                        <a class="d-block" data-toggle="collapse" href="#hon1" role="button" aria-expanded="false" aria-controls="hon1">
+                            Мёд "Разнотравие" (Освящённый в Свято-Вознесенском храме)
+                        </a>
+                        <div class="collapse" id="hon1">
+                            <div class="card card-body">
+                                <a href="img/catalog/cat-honey-01.png" data-toggle="lightbox">
+                                    <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-honey-01-small.png" width="200" height="200" alt="Мёд">
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="d-block" data-toggle="collapse" href="#hon2" role="button" aria-expanded="false" aria-controls="hon2">
+                            Прополис
+                        </a>
+                        <div class="collapse" id="hon2">
+                            <div class="card card-body">
+                                <div class="row justify-content-center">
+                                    <div class="col-12">
+                                        <p><span class='f-bold'>ПРОПОЛИС</span> – пчелиный клей со сложным химическим составом, который вырабатывают
+                                            пчелы в целях дезинфекции улья. Он состоит из различных смол, масел, спиртов, белков, а также
+                                            воска, цветочной пыльцы, витаминов, сахара и других ингредиентов.</p>
+                                        <p>Назначение прополиса – уничтожать возбудителей инфекционных заболеваний и разрушать токсины. Прополис
+                                            подавляет активность и убивает бактерии и вирусы, замедляет рост некоторых из них, подавляет
+                                            болезнетворные организмы. Кроме того, этот медопродукт обезвреживает яды, которые выделяют распадающиеся
+                                            клетки, ускоряет процессы регенерации, заживления.</p>
+                                        <p>Попадая в организм человека, прополис удаляет холестерин, чистит клеточные мембраны, нейтрализует
+                                            патологические клетки, восстанавливает поражённые ткани.</p>
+                                        <p>При этом не оказывает вредного воздействия на микрофлору кишечника и усиливает действие других
+                                            лекарственных средств. Прополис имеет уникальное качество – даже после обработки высокими температурами
+                                            не изменять своих свойств.</p>
+                                    </div>
+                                    <div class="col-12 col-lg-2 p-10px">
+                                        <a href="img/catalog/cat-honey-02.png" data-toggle="lightbox" data-footer="Прополис">
+                                            <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-honey-02-small.png" width="200" height="200"
+                                                 alt="Прополис">
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-lg-2 p-10px">
+                                        <a href="img/catalog/cat-honey-03.png" data-toggle="lightbox" data-footer="Мёд с прополисом">
+                                            <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-honey-03-small.png" width="200" height="200"
+                                                 alt="Мёд с прополисом">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseHoney2" aria-expanded="true" aria-controls="collapseHoney2">
-                                Перга
-                            </button>
-                        </h5>
-                    </div>
-                    <div class="collapse" id="collapseHoney2">
-                        <div class="card-body">
-                            <div class="row justify-content-center">
-                                <div class="col-12">
-                                    <p><span class='f-bold'>ПЕРГА</span> – цветочная пыльца, собранная пчёлами, уложенная и утрамбованная в ячейки
-                                        сотов, залитая мёдом и запечатанная, при этом прошедшая ряд химических реакций. Это источник углеводов,
-                                        белков, витаминов, макро- и микроэлементов, ферментов и ряда биологически важных и активных соединений
-                                        в их природном, первозданном виде.</p>
-                                    <p><span class='f-bold'>ПЕРГА, ДОБАВЛЕННАЯ В МЁД</span>, значительно повышает его пользу. Получается необыкновенно
-                                        вкусный и полезный высококалорийный продукт, который может быть отнесен к категории диетических.</p>
-                                </div>
-                                <div class="col-12 col-lg-2 p-10px">
-                                    <a href="img/catalog/cat-honey-04.png" data-toggle="lightbox" data-footer="Перга">
-                                        <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-honey-04-small.png" width="200" height="200"
-                                            alt="Перга">
-                                    </a>
-                                </div>
-                                <div class="col-12 col-lg-2 p-10px">
-                                    <a href="img/catalog/cat-honey-05.png" data-toggle="lightbox" data-footer="Перга">
-                                        <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-honey-05-small.png" width="200" height="200"
-                                            alt="Перга">
-                                    </a>
-                                </div>
-                                <div class="col-12 col-lg-2 p-10px">
-                                    <a href="img/catalog/cat-honey-06.png" data-toggle="lightbox" data-footer="Мёд с пергой">
-                                        <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-honey-06-small.png" width="200" height="331"
-                                            alt="Мёд с пергой">
-                                    </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="d-block" data-toggle="collapse" href="#hon3" role="button" aria-expanded="false" aria-controls="hon3">
+                            Перга
+                        </a>
+                        <div class="collapse" id="hon3">
+                            <div class="card card-body">
+                                <div class="row justify-content-center">
+                                    <div class="col-12">
+                                        <p><span class='f-bold'>ПЕРГА</span> – цветочная пыльца, собранная пчёлами, уложенная и утрамбованная в ячейки
+                                            сотов, залитая мёдом и запечатанная, при этом прошедшая ряд химических реакций. Это источник углеводов,
+                                            белков, витаминов, макро- и микроэлементов, ферментов и ряда биологически важных и активных соединений
+                                            в их природном, первозданном виде.</p>
+                                        <p><span class='f-bold'>ПЕРГА, ДОБАВЛЕННАЯ В МЁД</span>, значительно повышает его пользу. Получается необыкновенно
+                                            вкусный и полезный высококалорийный продукт, который может быть отнесен к категории диетических.</p>
+                                    </div>
+                                    <div class="col-12 col-lg-2 p-10px">
+                                        <a href="img/catalog/cat-honey-04.png" data-toggle="lightbox" data-footer="Перга">
+                                            <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-honey-04-small.png" width="200" height="200"
+                                                 alt="Перга">
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-lg-2 p-10px">
+                                        <a href="img/catalog/cat-honey-05.png" data-toggle="lightbox" data-footer="Перга">
+                                            <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-honey-05-small.png" width="200" height="200"
+                                                 alt="Перга">
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-lg-2 p-10px">
+                                        <a href="img/catalog/cat-honey-06.png" data-toggle="lightbox" data-footer="Мёд с пергой">
+                                            <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-honey-06-small.png" width="200" height="331"
+                                                 alt="Мёд с пергой">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
     <section id="catalogOther">
         <div class="container">
             <h2>Другое</h2>
-            <div class="accordion" id="accordionOther">
-                <div class="card">
-                    <div class="card-header" id="headingOther1">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOther1" aria-expanded="false" aria-controls="collapseOther1">
-                                Черёмуха сушёная
-                            </button>
-                        </h5>
-                    </div>
-    
-                    <div id="collapseOther1" class="collapse" aria-labelledby="headingOther1">
-                        <div class="card-body">
-                            <a href="img/catalog/cat-other-01.jpg" data-toggle="lightbox" data-footer="Черёмуха сушёная">
-                                <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-other-01-small.jpg" width="200" height="273" alt="Черёмуха сушёная">
-                            </a>
+            <table class="table table-striped">
+                <tbody>
+                <tr>
+                    <td>
+                        <a class="d-block" data-toggle="collapse" href="#other1" role="button" aria-expanded="false" aria-controls="other1">
+                            Черёмуха сушёная
+                        </a>
+                        <div class="collapse" id="other1">
+                            <div class="card card-body">
+                                <a href="img/catalog/cat-other-01.jpg" data-toggle="lightbox">
+                                    <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-other-01-small.jpg" width="200" height="273" alt="Черёмуха сушёная">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingOther2">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOther2" aria-expanded="false" aria-controls="collapseOther2">
-                                Мука из плодов черёмухи
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseOther2" class="collapse" aria-labelledby="headingOther2">
-                        <div class="card-body">
-                            <a href="img/catalog/cat-other-02.jpg" data-toggle="lightbox" data-footer="Мука из плодов черёмухи">
-                                <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-other-02-small.jpg" width="200" height="213" alt="Мука из плодов черёмухи">
-                            </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="d-block" data-toggle="collapse" href="#other2" role="button" aria-expanded="false" aria-controls="other2">
+                            Мука из плодов черёмухи
+                        </a>
+                        <div class="collapse" id="other2">
+                            <div class="card card-body">
+                                <a href="img/catalog/cat-other-02.jpg" data-toggle="lightbox">
+                                    <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-other-02-small.jpg" width="200" height="213" alt="Мука из плодов черёмухи">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingOther3">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOther3" aria-expanded="false" aria-controls="collapseOther3">
-                                Укроп
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseOther3" class="collapse" aria-labelledby="headingOther3">
-                        <div class="card-body">
-                            <a href="img/catalog/cat-other-03.jpg" data-toggle="lightbox" data-footer="Укроп">
-                                <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-other-03-small.jpg" width="200" height="275" alt="Укроп">
-                            </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="d-block" data-toggle="collapse" href="#other3" role="button" aria-expanded="false" aria-controls="other3">
+                            Укроп
+                        </a>
+                        <div class="collapse" id="other3">
+                            <div class="card card-body">
+                                <a href="img/catalog/cat-other-03.jpg" data-toggle="lightbox">
+                                    <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="img/catalog/cat-other-03-small.jpg" width="200" height="275" alt="Укроп">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="w-100 h-100 d-flex align-items-center">
+            <div class="footer-div mx-auto">
+                <p class="footer-text">ЗВОНИТЕ ПРЯМО СЕЙЧАС!</p>
+                <p class="footer-text footer-phone">8&nbsp;(8212) 55-93-63</p>
             </div>
         </div>
     </section>
