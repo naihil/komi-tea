@@ -22,7 +22,8 @@
 
 <body>
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter50018893 = new Ya.Metrika2({ id:50018893, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/50018893" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter50018893 = new Ya.Metrika2({ id:50018893, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/50018893" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
     <section id="header">
@@ -38,34 +39,62 @@
         </div>
     </section>
 
-    <template id="tbodyTemplate">
-        <tr>
-            <td>
-                <a class="d-block" data-toggle="collapse" href="#{id}" role="button" aria-expanded="false" aria-controls="{id}">
-                    {title}
-                </a>
-                <div class="collapse" id="{id}">
-                    <div class="card card-body">
-                        <div class="row">
-                            <div class="col-12 col-lg-2">
-                                <a href="{img}" data-toggle="lightbox" class="d-block p-10px">
-                                    <img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="{img_thumb}" alt="{title}">
-                                </a>
-                            </div>
-                            <div class="col-12 col-lg-10">
-                                {description}
-                                <p class="catalog-text-contra"><span class="f-bold">Противопоказания</span>: {contra}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-    </template>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Ыбский чай</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <section id="catalogIvanTea">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Каталог
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#cat-tea1">Иван-чай</a>
+                        <a class="dropdown-item" href="#cat-tea3">Продукты пчеловодства</a>
+                        <a class="dropdown-item" href="#cat-tea4">Другое</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--<template id="tbodyTemplate"  style="display:none">-->
+        <!--<tr>-->
+            <!--<td>-->
+                <!--<a class="d-block" data-toggle="collapse" href="#{id}" role="button" aria-expanded="false" aria-controls="{id}">-->
+                    <!--{title}-->
+                <!--</a>-->
+                <!--<div class="collapse" id="{id}">-->
+                    <!--<div class="card card-body">-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-12 col-lg-2">-->
+                                <!--<a href="{img}" data-toggle="lightbox" class="d-block p-10px">-->
+                                    <!--<img class="catalog-item-thumbnale img-thumbnail d-block mx-auto" src="{img_thumb}" alt="{title}">-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<div class="col-12 col-lg-10">-->
+                                <!--{description}-->
+                                <!--<p class="catalog-text-contra"><span class="f-bold">Противопоказания</span>: {contra}</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</td>-->
+        <!--</tr>-->
+    <!--</template>-->
+
+    <section id="cat-tea1">
         <div class="container">
-            <h2>ИВАН-ЧАЙ</h2>
+            <h2 style="padding-top: 3.5rem">Иван-чай</h2>
             <table class="table table-striped">
                 <tbody id="teaTable">
                 </tbody>
@@ -73,19 +102,9 @@
         </div>
     </section>
 
-    <section id="catalogBathings">
+    <section id="cat-tea3">
         <div class="container">
-            <h2>ЧАЙНЫЕ КУПАЖИ</h2>
-            <table class="table table-striped">
-                <tbody id="bathingsTable">
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <section id="catalogHoney">
-        <div class="container">
-            <h2>ПРОДУКТЫ ПЧЕЛОВОДСТВА</h2>
+            <h2>Продукты пчеловодства</h2>
             <div class="row">
                 <div class="col-12">
                     <p>Кроме дружбы с лесным жителями, «Ыбский чай» дружит с пчелами. У нас есть небольшая пасека – армия верных, трудолюбивых пчёлок, которым не под силу в северных условиях запастись витаминами на каждого жителя.
@@ -194,7 +213,7 @@
         </div>
     </section>
 
-    <section id="catalogOther">
+    <section id="cat-tea4">
         <div class="container">
             <h2>Другое</h2>
             <table class="table table-striped">

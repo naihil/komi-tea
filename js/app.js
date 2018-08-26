@@ -256,17 +256,14 @@ function fillCatalogItems() {
             description: "<p><span class='f-bold'>Молодые листья берёзы</span> препятствуют солеотложению в суставах. Используют при воспалительных заболеваниях почек и мочевого пузыря. Являются самым доступным и эффективным мочегонным средством, снижая отёки, уменьшая одышку. Улучшают кровообращение, растворяют тромбы. Помогают при простуде, заболевании верхних дыхательных путей. Антигельминтное средство.</p>",
             contra: "индивидуальная непереносимость, период беременности, лактации"
         },
-    ];
-
-    const BathingItems = [
         {
             title: "Иван-чай Рождественский",
             img_thumb: "img/catalog/cat-035-small.jpg",
             img: "img/catalog/cat-035.jpg",
-            description: "<span style='color: red'>«В этот светлый праздник»</span><br><br>" + 
-            "В этот светлый праздник –<br>" + 
-            "Праздник Рождества<br>" + 
-            "Мы друг другу скажем<br>" + 
+            description: "<span style='color: red'>«В этот светлый праздник»</span><br><br>" +
+            "В этот светлый праздник –<br>" +
+            "Праздник Рождества<br>" +
+            "Мы друг другу скажем<br>" +
             "Теплые слова.<br><br>" +
             "Тихо снег ложится:<br>" +
             "За окном зима,<br>" +
@@ -287,7 +284,7 @@ function fillCatalogItems() {
             title: "Иван-чай Пасхальный",
             img_thumb: "img/catalog/cat-036-small.jpg",
             img: "img/catalog/cat-036.jpg",
-            description: "<span style='color: red'>Под напев молитв пасхальных...</span><br><br>" + 
+            description: "<span style='color: red'>Под напев молитв пасхальных...</span><br><br>" +
             "Под напев молитв пасхальных<br>" +
             "И под звон колоколов<br>" +
             "К нам летит весна из дальних,<br>" +
@@ -303,7 +300,7 @@ function fillCatalogItems() {
             "И в саду у нас сегодня<br>" +
             "Я заметил, как тайком<br>" +
             "Похристосовался ландыш<br>" +
-            "С белокрылым мотыльком!<br><br>" + 
+            "С белокрылым мотыльком!<br><br>" +
             "Автор: К. М. Фофанов <br>1878 г.",
             contra: "индивидуальная непереносимость, период беременности, лактации"
         },
@@ -358,23 +355,36 @@ function fillCatalogItems() {
             img: "img/catalog/cat-043.jpg",
             description: "<p><span class='f-bold'>ЯБЛОКИ</span> положительно влияют на обменные процессы в организме, улучшают пищеварение, благотворно влияют на нервную систему и работу памяти. <span class='f-bold'>ИМБИРЬ</span>, натуральный источник витаминов и минералов. Регулирует вес, наполняет энергией, повышает жизненный тонус, укрепляет память. <span class='f-bold'>КОРИЦА</span> в напитке ускоряет метаболизм, тонизирует.</p>",
             contra: "индивидуальная непереносимость, период беременности, лактации"
-        },
+        },    ];
 
-    ];
-
-    const tbodyTemplate = $("#tbodyTemplate").html();
+    // const tbodyTemplate = $("#tbodyTemplate").html();
+    const tbodyTemplate = "        <tr>\n" +
+        "            <td>\n" +
+        "                <a class=\"d-block\" data-toggle=\"collapse\" href=\"#{id}\" role=\"button\" aria-expanded=\"false\" aria-controls=\"{id}\">\n" +
+        "                    {title}\n" +
+        "                </a>\n" +
+        "                <div class=\"collapse\" id=\"{id}\">\n" +
+        "                    <div class=\"card card-body\">\n" +
+        "                        <div class=\"row\">\n" +
+        "                            <div class=\"col-12 col-lg-2\">\n" +
+        "                                <a href=\"{img}\" data-toggle=\"lightbox\" class=\"d-block p-10px\">\n" +
+        "                                    <img class=\"catalog-item-thumbnale img-thumbnail d-block mx-auto\" src=\"{img_thumb}\" alt=\"{title}\">\n" +
+        "                                </a>\n" +
+        "                            </div>\n" +
+        "                            <div class=\"col-12 col-lg-10\">\n" +
+        "                                {description}\n" +
+        "                                <p class=\"catalog-text-contra\"><span class=\"f-bold\">Противопоказания</span>: {contra}</p>\n" +
+        "                            </div>\n" +
+        "                        </div>\n" +
+        "                    </div>\n" +
+        "                </div>\n" +
+        "            </td>\n" +
+        "        </tr>\n"
 
     const teaTable = $("#teaTable");
     for (let i = 0; i < IvanTeaCatalogItems.length; i++) {
         const v = IvanTeaCatalogItems[i];
         v.id = "tea" + i;
         teaTable.append(nano(tbodyTemplate, v));
-    }
-
-    const bathingsTable = $("#bathingsTable");
-    for (let i = 0; i < BathingItems.length; i++) {
-        const v = BathingItems[i];
-        v.id = "bath" + i;
-        bathingsTable.append(nano(tbodyTemplate, v));
     }
 }
