@@ -2,6 +2,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+section {
+    padding: 10px 0;
+}
+
 p {
     text-indent: 20px;
     text-align: justify;
@@ -55,23 +59,13 @@ p {
     background-color: #E0E0E0;
     color: #492626;
     font-style: italic;
-    padding: 10px 0;
     text-align: right;
-}
-
-#quote p {
-    margin: 0;
 }
 
 /* Каталог */
 #catalog {
     background-color: white;
     color: #492626;
-    padding: 10px 0;
-}
-
-#catalog p {
-    margin: 0;
 }
 
 .catalog-item {
