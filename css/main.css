@@ -133,6 +133,23 @@ body {
     color: #939393;
 }
 
+.review-link {
+    background-color: transparent;
+    border: 2px solid #C69C6D;
+    border-radius: 5px;
+    color: #C69C6D;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.review-link:active,
+.review-link:hover,
+.review-link:link,
+.review-link:visited {
+    color: #C69C6D;
+    text-decoration: none;
+}
+
 /* Где приобрести */
 #where {
     background-color: white;
