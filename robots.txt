@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /css
-Disallow: /fonts
 Disallow: /js
 
 User-agent: Googlebot
@@ -10,6 +9,5 @@ Allow: /
 User-agent: Yandex
 Allow: /
 Disallow: /css
-Disallow: /fonts
 Disallow: /js
 sitemap: https://komi-tea.ru/sitemap.xml
