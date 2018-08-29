@@ -357,7 +357,6 @@ function fillCatalogItems() {
             contra: "индивидуальная непереносимость, период беременности, лактации"
         },    ];
 
-    // const tbodyTemplate = $("#tbodyTemplate").html();
     const tbodyTemplate = "        <tr>\n" +
         "            <td>\n" +
         "                <a class=\"d-block\" data-toggle=\"collapse\" href=\"#{id}\" role=\"button\" aria-expanded=\"false\" aria-controls=\"{id}\">\n" +
