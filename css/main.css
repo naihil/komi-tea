@@ -101,8 +101,6 @@ p {
 #about {
     background-color: #C69C6D;
     color: #492626;
-    padding: 10px 0;
-    text-align: justify;
 }
 
 .about-photo {
@@ -116,7 +114,6 @@ p {
 #review {
     background-color: #492626;
     color: #C69C6D;
-    padding: 10px 0;
 }
 
 .review-item {
@@ -153,7 +150,6 @@ p {
 #where {
     background-color: white;
     color: #492626;
-    padding: 10px 0;
 }
 
 .where-item {
@@ -168,7 +164,6 @@ p {
 #contacts {
     background-color: white;
     color: #492626;
-    padding: 10px 0;
 }
 
 /* Подвал */
