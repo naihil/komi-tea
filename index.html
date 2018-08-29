@@ -91,7 +91,9 @@
             <div class="row justify-content-between">
                 <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 p-10px">
                     <div class="card mx-auto" style="width: 200px;">
-                        <img class="card-img-top" src="img/catalog/cat-001-small.jpg" width="200" height="200" alt="Иван-чай гранулированный">
+                        <a href="img/catalog/cat-001.jpg" data-toggle="lightbox">
+                            <img class="card-img-top" src="img/catalog/cat-001-small.jpg" width="200" height="200" alt="Иван-чай гранулированный">
+                        </a>
                         <div class="card-body">
                             Иван-чай<br>
                             гранулированный
@@ -101,7 +103,9 @@
 
                 <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 p-10px">
                     <div class="card mx-auto" style="width: 200px;">
-                        <img class="card-img-top" src="img/catalog/cat-002-small.jpg" width="200" height="200" alt="Иван-чай с морошкой">
+                        <a href="img/catalog/cat-002.jpg" data-toggle="lightbox">
+                            <img class="card-img-top" src="img/catalog/cat-002-small.jpg" width="200" height="200" alt="Иван-чай с морошкой">
+                        </a>
                         <div class="card-body">
                             Иван-чай<br>
                             с морошкой
@@ -111,7 +115,9 @@
 
                 <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 p-10px">
                     <div class="card mx-auto" style="width: 200px;">
-                        <img class="card-img-top" src="img/catalog/cat-035-small.jpg" width="200" height="200" alt="Иван-чай Рождественский">
+                        <a href="img/catalog/cat-035.jpg" data-toggle="lightbox">
+                            <img class="card-img-top" src="img/catalog/cat-035-small.jpg" width="200" height="200" alt="Иван-чай Рождественский">
+                        </a>
                         <div class="card-body">
                             Иван-чай<br>
                             Рождественский
@@ -121,7 +127,9 @@
 
                 <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 p-10px">
                     <div class="card mx-auto" style="width: 200px;">
-                        <img class="card-img-top" src="img/catalog/cat-038-small.jpg" width="200" height="200" alt="Иван-чай Разнотравие">
+                        <a href="img/catalog/cat-038.jpg" data-toggle="lightbox">
+                            <img class="card-img-top" src="img/catalog/cat-038-small.jpg" width="200" height="200" alt="Иван-чай Разнотравие">
+                        </a>
                         <div class="card-body">
                             Иван-чай<br>
                             Разнотравие
@@ -291,6 +299,7 @@
     
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             var wnd = $(window);
@@ -303,6 +312,11 @@
             wnd.on('resize', function () {
                 hdr.height(wnd.height());
             });
+        });
+
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
         });
     </script>
 </body>
