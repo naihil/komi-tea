@@ -56,21 +56,22 @@ p {
     text-align: right;
 }
 
+.btn-warning {
+    background-color: #F98F0B;
+    border-color: #F98F0B;
+}
+
 /* Каталог */
 #catalog {
     background-color: white;
     color: #492626;
 }
 
-.catalog-item {
-    padding: 10px 10px;
-}
-
 .card-body {
     color: #C69C6D;
     background-color: #492626;
     margin: 0;
-    padding: 2px 5px 2px 5px;
+    padding: 2px 5px;
 }
 
 .catalog-link {
@@ -88,6 +89,12 @@ p {
 .catalog-link:visited {
     color: #492626;
     text-decoration: none;
+}
+
+.catalog-text-contra {
+    color: #dee2e6;
+    font-size: 0.8rem;
+    margin-top: 15px;
 }
 
 /* О нас */
@@ -173,6 +180,7 @@ p {
 }
 
 .footer-div {
+    /* background-color: #ffc107; */
     background-color: #F98F0B;
     border: 1px;
     border-color: #F98F0B;
@@ -186,27 +194,6 @@ p {
 .footer-phone {
     color: white;
     font-size: 2rem;
-}
-
-/*#catalog-row p::first-letter {*/
-    /*margin-left: 5px;*/
-/*}*/
-
-#catalogIvanTea,
-#catalogBathings,
-#catalogHoney {
-    padding: 10px 0;
-}
-
-#catalogIvanTea-row .catalog-text-bold,
-#catalogBathings-row .catalog-text-bold {
-    font-weight: bold;
-}
-
-#catalogIvanTea-row .catalog-text-contra,
-#catalogBathings-row .catalog-text-contra {
-    margin-top: 15px;
-    font-size: 0.8rem;
 }
 
 @media (min-width: 576px) {

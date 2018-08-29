@@ -373,7 +373,7 @@ function fillCatalogItems() {
         "                            </div>\n" +
         "                            <div class=\"col-12 col-lg-10\">\n" +
         "                                {description}\n" +
-        "                                <p class=\"catalog-text-contra\"><span class=\"f-bold\">Противопоказания</span>: {contra}</p>\n" +
+        "                                <span class=\"catalog-text-contra\"><span class=\"f-bold\">Противопоказания</span>: {contra}</span>\n" +
         "                            </div>\n" +
         "                        </div>\n" +
         "                    </div>\n" +
