@@ -177,14 +177,10 @@ p {
     border: 1px;
     border-color: #F98F0B;
     border-radius: 5px;
-    font-weight: bold;
-    padding: 10px 5px;
-    text-align: center;
-}
-
-.footer-text {
     color: #492626;
-    margin: 0;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-align: center;
 }
 
 .footer-phone {
