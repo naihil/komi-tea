@@ -367,7 +367,7 @@ function fillCatalogItems() {
         "                        <div class=\"row\">\n" +
         "                            <div class=\"col-12 col-lg-2\">\n" +
         "                                <a href=\"{img}\" data-toggle=\"lightbox\" class=\"d-block p-10px\">\n" +
-        "                                    <img class=\"catalog-item-thumbnale img-thumbnail d-block mx-auto\" src=\"{img_thumb}\" alt=\"{title}\">\n" +
+        "                                    <img class=\"img-thumbnail d-block mx-auto\" src=\"{img_thumb}\" alt=\"{title}\" width=\"200\" height=\"200\">\n" +
         "                                </a>\n" +
         "                            </div>\n" +
         "                            <div class=\"col-12 col-lg-10\">\n" +
