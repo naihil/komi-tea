@@ -103,13 +103,6 @@ p {
     color: #492626;
 }
 
-.about-photo {
-    background-image: url(../img/about/about-280.png);
-    border-radius: 5px;
-    height: 280px;
-    width: 280px;
-}
-
 /* Отзывы */
 #review {
     background-color: #492626;
@@ -189,16 +182,6 @@ p {
 .footer-phone {
     color: white;
     font-size: 2rem;
-}
-
-@media (min-width: 576px) {
-    .about-photo {
-        background-image: url(../img/about/about-400.png);
-        border-radius: 5px;
-        height: 400px;
-        width: 400px;
-    }
-    
 }
 
 @media (min-width: 1201px) {
