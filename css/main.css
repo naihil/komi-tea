@@ -39,16 +39,10 @@ p {
     height: 800px;
 }
 
-#header img,
-#header p {
-    margin: 0;
-    padding: 10px 0;
-}
-
-.header__div {
-    background-color: rgba(198, 156, 109, 0.7);
+.header-div {
+    background-color: rgba(198, 156, 109, 0.8);
     border: 1px;
-    border-color: rgba(198, 156, 109, 0.7);
+    border-color: rgba(198, 156, 109, 0.8);
     border-radius: 5px;
     color: white;
     text-align: center;
