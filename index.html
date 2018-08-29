@@ -15,39 +15,72 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" />
     <link rel="canonical" href="https://komi-tea.ru" />
 </head>
 
 <body>
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter50018893 = new Ya.Metrika2({ id:50018893, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/50018893" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter50018893 = new Ya.Metrika2({ id:50018893, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/50018893" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
-    <section id="header">
+    <header id="header">
         <div class="container w-100 h-100">
             <div class="row h-100">
-                <div class="col col-md-8 mx-auto d-flex align-items-center">
-                    <div class="header__div mx-auto">
-                        <img class="d-block mx-auto" src="img/logo-260.png" alt="Ыбский чай" width="260" height="142">
-                        <p class="h2">Иван-чай из Республики Коми</p>
-                        <p>Экологически чистые продукты,<br/>собранные с любовью
-                        </p>
+                <div class="col-12 col-md-9 mx-auto d-flex align-items-center">
+                    <div class="header-div mx-auto">
+                        <img class="d-block mx-auto p-10px" src="img/logo-260.png" alt="Ыбский чай" width="260" height="142">
+                        <h1 class="p-10px">Иван-чай из Республики Коми</h1>
+                        <h5 class="p-10px">Экологически чистые продукты,<br/>
+                            собранные с любовью
+                        </h5>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo-small.png" width="100" height="49" alt="Ыбский чай" class="d-block">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#review">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#where">Где приобрести</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Контакты</a>
+                </li>
+            </ul>
+            <a href="tel:88212559363" class="btn btn-warning">8 (8212) 55-93-63</a>
+        </div>
+    </nav>
 
     <section id="quote">
         <div class="container">
             <div class="row">
                 <div class="col d-flex justify-content-center">
                     <div class="d-inline-block">
-                        <p>&laquo;Когда на улице ненастье,<br/> И неохота выходить,<br/> То чашка чая — просто счастье,<br/>                            И
-                            это счастье можно пить...&raquo;
-                        </p>
+                        &laquo;Когда на улице ненастье,<br>
+                        И неохота выходить,<br>
+                        То чашка чая — просто счастье,<br>
+                        И это счастье можно пить...&raquo;<br>
                     </div>
                 </div>
             </div>
@@ -56,51 +89,59 @@
 
     <section id="catalog">
         <div class="container">
-            <h2>КАКОЙ&nbsp;ЧАЙ <span style="color: #C69C6D">ВЫ&nbsp;ХОТИТЕ?</span></h2>
+            <h2>Рекомендуем</h2>
             <div class="row justify-content-between">
-                <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 catalog-item">
+                <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 p-10px">
                     <div class="card mx-auto" style="width: 200px;">
-                        <img class="card-img-top" src="img/catalog/ph-0001.jpg" width="200" height="200" alt="Иван-чай с малиной">
+                        <a href="img/catalog/cat-001.jpg" data-toggle="lightbox">
+                            <img class="card-img-top" src="img/catalog/cat-001-small.jpg" width="200" height="200" alt="Иван-чай гранулированный">
+                        </a>
                         <div class="card-body">
-                            <p>Иван-чай<br/>с малиной
-                            </p>
+                            Иван-чай<br>
+                            гранулированный
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 catalog-item">
+                <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 p-10px">
                     <div class="card mx-auto" style="width: 200px;">
-                        <img class="card-img-top" src="img/catalog/ph-0002.jpg" width="200" height="200" alt="Иван-чай с липой">
+                        <a href="img/catalog/cat-002.jpg" data-toggle="lightbox">
+                            <img class="card-img-top" src="img/catalog/cat-002-small.jpg" width="200" height="200" alt="Иван-чай с морошкой">
+                        </a>
                         <div class="card-body">
-                            <p>Иван-чай<br/>с липой
-                            </p>
+                            Иван-чай<br>
+                            с морошкой
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 catalog-item">
+                <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 p-10px">
                     <div class="card mx-auto" style="width: 200px;">
-                        <img class="card-img-top" src="img/catalog/ph-0003.jpg" width="200" height="200" alt="Иван-чай с голубикой и васильком">
+                        <a href="img/catalog/cat-035.jpg" data-toggle="lightbox">
+                            <img class="card-img-top" src="img/catalog/cat-035-small.jpg" width="200" height="200" alt="Иван-чай Рождественский">
+                        </a>
                         <div class="card-body">
-                            <p>Иван-чай<br/>с голубикой и васильком
-                            </p>
+                            Иван-чай<br>
+                            Рождественский
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 catalog-item">
+                <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 p-10px">
                     <div class="card mx-auto" style="width: 200px;">
-                        <img class="card-img-top" src="img/catalog/ph-0004.jpg" width="200" height="200" alt="Иван-чай ромашковый">
+                        <a href="img/catalog/cat-038.jpg" data-toggle="lightbox">
+                            <img class="card-img-top" src="img/catalog/cat-038-small.jpg" width="200" height="200" alt="Иван-чай Разнотравие">
+                        </a>
                         <div class="card-body">
-                            <p>Иван-чай<br/>ромашковый
-                            </p>
+                            Иван-чай<br>
+                            Разнотравие
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 d-flex justify-content-end">
-                    <a class="catalog-link" href="#">Посмотреть все</a>
+                    <a class="catalog-link" href="catalog.html">Посмотреть все</a>
                 </div>
             </div>
         </div>
@@ -108,25 +149,58 @@
 
     <section id="about">
         <div class="container">
-            <h2>О НАС</h2>
+            <h2>О нас</h2>
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <p>"ЫБСКИЙ ЧАЙ " - это семья, которую жизнь в деревне подтолкнула на создание собственного дела. Мы держим
-                        пасеку и занимаемся производством Иван-чая в с. Ыб, РК с 2010г.</p>
-                    <p>Начиналось чайное дело с простых травяных сборов, не проходивших процесса ферментации. На сегодняшний
-                        день кипрейный чай производится по технологиям изготовления чёрного байхового чая, а также путём
-                        наработки собственного опыта. Желание совершенствоваться и новые идеи, подталкивают нас на новые
-                        этапы. Сейчас чай сертифицирован, имеется цех, рабочий персонал, расширяется ассортимент оборудования,
-                        ассортимент чайной линейки. Ранее, единственная точка продаж была в местном храме (от этого с ним
-                        связь на этикетках. Часть выручки от чая идёт как пожертвование). И вот уже больше года существует
-                        магазин "Ыбский чай" в городе Сыктывкаре. Общение с людьми и осознание пользы своего труда даёт нам
-                        новые силы к труду и развитию.
+                <div class="col-12">
+                    <p class="m-0">"ЫБСКИЙ ЧАЙ" - это семья, которую жизнь в деревне подтолкнула на создание собственного дела. Мы держим пасеку и занимаемся
+                        производством Иван-чая в с. Ыб, РК с 2010г.</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-5 col-lg-4 col-xl-3 mx-auto p-10px">
+                    <a href="img/about/about-1.jpg" data-toggle="lightbox">
+                        <img src="img/about/about-1-small.jpg" class="d-block mx-auto" alt="село Ыб">
+                    </a>
+                </div>
+                <div class="col-12 col-md-5 col-lg-4 col-xl-3 mx-auto p-10px">
+                    <a href="img/about/about-2.jpg" data-toggle="lightbox">
+                        <img src="img/about/about-2-small.jpg" class="d-block mx-auto" alt="Сушка чая">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="m-0">Начиналось чайное дело с простых травяных сборов, не проходивших процесса ферментации. На сегодняшний день кипрейный
+                        чай производится по технологиям изготовления чёрного байхового чая, а также путём наработки собственного опыта.
+                        Желание совершенствоваться и новые идеи, подталкивают нас на новые этапы. Сейчас чай сертифицирован, имеется
+                        цех, рабочий персонал, расширяется ассортимент оборудования, ассортимент чайной линейки. Ранее, единственная
+                        точка продаж была в местном храме (от этого с ним связь на этикетках. Часть выручки от чая идёт как пожертвование).
+                        И вот уже больше года существует магазин "Ыбский чай" в городе Сыктывкаре. Общение с людьми и осознание пользы
+                        своего труда даёт нам новые силы к труду и развитию.
                         <br/>В итоге, "Ыбский чай" - магазин здорового питания в г. Сыктывкар.
                     </p>
-                    <p>С уважением, "Ыбский чай": Валентина, Катерина, Никита и София.</p>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="about-photo mx-auto"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-5 col-lg-4 col-xl-3 mx-auto p-10px">
+                    <a href="img/about/about-3.jpg" data-toggle="lightbox">
+                        <img src="img/about/about-3-small.jpg" class="d-block mx-auto" alt="Сушка чая">
+                    </a>
+                </div>
+                <div class="col-12 col-md-5 col-lg-4 col-xl-3 mx-auto p-10px">
+                    <a href="img/about/about-4.jpg" data-toggle="lightbox">
+                        <img src="img/about/about-4-small.jpg" class="d-block mx-auto" alt="Заготовка чая">
+                    </a>
+                </div>
+                <div class="col-12 col-md-5 col-lg-4 col-xl-3 mx-auto p-10px">
+                    <a href="img/about/about-5.jpg" data-toggle="lightbox">
+                        <img src="img/about/about-5-small.jpg" class="d-block mx-auto" alt="Заготовка чая">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>С уважением, "Ыбский чай": Валентина, Катерина, Никита и София.</p>
                 </div>
             </div>
         </div>
@@ -134,7 +208,7 @@
 
     <section id="review">
         <div class="container">
-            <h2>ОТЗЫВЫ</h2>
+            <h2>Отзывы</h2>
             <div class="row review-item">
                 <div class="col-12">
                     <div>
@@ -145,10 +219,10 @@
                             <img class="d-block mx-auto rounded" src="img/reviews/review3.jpg" width="100" height="100" alt="Наташа Власова">
                         </div>
                         <div class="col-12 col-sm-9 col-md-9 col-lg-10 col-xl-10">
-                            <p>Выиграла в конкурсе репостов мед, чай и мюсли ))) Они просто бесподобны!!! темболее сейчас,
+                            <span class="f-italic">Выиграла в конкурсе репостов мед, чай и мюсли ))) Они просто бесподобны!!! темболее сейчас,
                                 кода идет Великий пост, Ваша продукция просто незаменима!!!! Отдельное спасибо за ЧЕСТНЫЕ
                                 розыгрыши)))
-                            </p>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -164,8 +238,8 @@
                             <img class="d-block mx-auto rounded" src="img/reviews/review2.jpg" width="100" height="100" alt="Елена Нечаева">
                         </div>
                         <div class="col-12 col-sm-9 col-md-9 col-lg-10 col-xl-10">
-                            <p>Получила свой выигрыш,все красиво упаковано,мёд очень вкусный.Спасибо Вам большое!
-                            </p>
+                            <span class="f-italic">Получила свой выигрыш,все красиво упаковано,мёд очень вкусный.Спасибо Вам большое!
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -181,14 +255,19 @@
                             <img class="d-block mx-auto rounded" src="img/reviews/review1.jpg" width="100" height="100" alt="Виктория Чекункова">
                         </div>
                         <div class="col-12 col-sm-9 col-md-9 col-lg-10 col-xl-10">
-                            <p>Всем доброго утра)))) заказали мы чаи: с облепихой, малиной и мятой! Как же приятно заваривать
+                            <span class="f-italic">Всем доброго утра)))) заказали мы чаи: с облепихой, малиной и мятой! Как же приятно заваривать
                                 их каждый день и пить))) правда я все равно добавляю по 3 ст.л.замороженной облепихи, имбирь,
                                 свежую мяту и корицу и получается великолепное сочетание)))) а когда лень-завариваю чай в
                                 чистом виде и с удовольствием пью)))) так что в Сочи 2 семьи наслаждаются вашим чаем и несказанно
                                 этому рады)))
-                            </p>
+                            </span>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row review-item">
+                <div class="col-12 d-flex justify-content-end">
+                    <a class="review-link" href="https://vk.com/topic-93460590_32686843">Посмотреть все</a>
                 </div>
             </div>
         </div>
@@ -196,7 +275,7 @@
 
     <section id="where">
         <div class="container">
-            <h2>ГДЕ ПРИОБРЕСТИ?</h2>
+            <h2>Где приобрести?</h2>
             <div class="row">
                 <div class="col-12 d-flex align-items-center where-item">
                     <img class="d-block" src="img/marker.png" width="28" height="41" alt="Marker">
@@ -220,38 +299,44 @@
 
     <section id="contacts">
         <div class="container">
-            <h2>КОНТАКТЫ</h2>
+            <h2>Контакты</h2>
             <div class="row">
                 <div class="col-12">
-                    <p>Телефон: <a href="tel:88212559363">8 (8212) 55-93-63</a></p>
+                    Телефон: <a href="tel:88212559363">8 (8212) 55-93-63</a><br>
+                    <br>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p>Email: <a href="mailto:ib.chaymed@mail.ru">ib.chaymed@mail.ru</a></p>
+                    Email: <a href="mailto:ib.chaymed@mail.ru">ib.chaymed@mail.ru</a><br>
+                    <br>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p>А также ищите нас в соц. сетях:</p>
-                    <a href="https://vk.com/ib.chaymed"><img src="img/vk.png" width="48" height="48" alt="VK"></a>
-                    <a href="https://www.instagram.com/yb_tea" style="margin-left: 24px"><img src="img/instagram.png" width="48" height="48" alt="instagram"></a>
+                    А также ищите нас в соц. сетях:<br>
+                    <div class="d-flex">
+                        <a href="https://vk.com/ib.chaymed" class="p-v-10px"><img src="img/vk.png" width="48" height="48" alt="VK" class="d-block"></a>
+                        <a href="https://www.instagram.com/yb_tea" class="p-10px"><img src="img/instagram.png" width="48" height="48" alt="Instagram" class="d-block"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="footer">
+    <footer id="footer">
         <div class="w-100 h-100 d-flex align-items-center">
             <div class="footer-div mx-auto">
-                <p class="footer-text">ЗВОНИТЕ ПРЯМО СЕЙЧАС!</p>
-                <p class="footer-text footer-phone">8&nbsp;(8212) 55-93-63</p>
+                ЗВОНИТЕ ПРЯМО СЕЙЧАС!<br>
+                <span class="footer-phone">8&nbsp;(8212) 55-93-63</span>
             </div>
         </div>
-    </section>
-
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             var wnd = $(window);
@@ -264,6 +349,11 @@
             wnd.on('resize', function () {
                 hdr.height(wnd.height());
             });
+        });
+
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
         });
     </script>
 </body>
